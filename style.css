@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.6rem;
+  background-image: url(assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#content {
+  display: flex;
+  height: 48.5rem;
+}
+
+#content #content-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-bottom: 2.4rem;
+  height: 48.5rem;
+}
+
+#content #content-double {
+  display: flex;
+  gap: 2.4rem;
+}
+
+#temperature-now {
+  background-image: url(assets/images/temperature-now.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 48rem;
+  height: 48rem;
+  border-radius: 1rem;
+  margin-right: 3.2rem;
+}
+
+#temperature-now .weather {
+  position: absolute;
+  left: -56px;
+  top: -56px;
+}
+
+#temperature-now .location {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 3.2rem;
+  margin-right: 3.2rem;
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #C2BFF4;
+}
+
+#temperature-now .temperature {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+#temperature-now .temperature .number .number-text1 {
+  display: flex;
+}
+
+#temperature-now .temperature .number .number-one {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 8.8rem;
+  line-height: 10.6rem;
+  color: white;
+}
+
+#temperature-now .temperature .number .number-two {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #DAD8F7;
+  margin-top: 1.1rem;
+}
+
+#temperature-now .temperature .number .number-three {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: white;
+  margin-left: 1.75rem;
+}
+
+#temperature-now .temperature .number .number-four {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #C2BFF4;
+}
+
+#temperature-now .statistics {
+  display: flex;
+  gap: 0.8rem;
+  width: 45.6rem;
+  height: 6rem;
+  margin-top: 14.2rem;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+#temperature-now .statistics .wind,
+#temperature-now .statistics .humidity,
+#temperature-now .statistics .rain {
+  display: flex;
+  align-items: center;
+  width: 14.667rem;
+  height: 6rem;
+  background-color: rgba(102, 96, 200, 0.6);
+  border-radius: 0.6rem;
+  padding: 1.2rem 1.6rem;
+  gap: 1.2rem;
+}
+
+#temperature-now .statistics .wind .info span,
+#temperature-now .statistics .humidity .info span,
+#temperature-now .statistics .rain .info span {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #E7E6FB;
+}
+
+#temperature-now .statistics .wind .info p,
+#temperature-now .statistics .humidity .info p,
+#temperature-now .statistics .rain .info p {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #DAD8F7;
+}
+
+#temperature-now .statistics .wind .info p strong,
+#temperature-now .statistics .humidity .info p strong,
+#temperature-now .statistics .rain .info p strong {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #E7E6FB;
+}
+  
+#air-quality {
+  width: 27.7rem;
+  height: 24.4rem;
+  background-color: #6D67D0;
+  border-radius: 1rem;
+}
+
+#air-quality .title,
+#sun-time .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 3.2rem;
+}
+
+#air-quality .title span,
+#sun-time .title span {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #DAD8F7;
+}
+
+#air-quality .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 3.2rem;
+}
+
+#air-quality .text .green {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  text-transform: capitalize;
+  color: #87EBCD;
+}
+
+#air-quality .text p {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: #E7E6FB;
+}
+
+#air-quality .info {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 3.2rem;
+  margin-bottom: 1.6rem;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  gap: 1.6rem;
+}
+
+#air-quality .info .info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+#air-quality .info .info-green {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #87EBCD;
+}
+
+#air-quality .info .info-white {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  text-transform: capitalize;
+  color: #E7E6FB;
+}
+
+#sun-time {
+  width: 27.7rem;
+  height: 24.4rem;
+  background-color: #6D67D0;
+  border-radius: 1rem;
+}
+
+#sun-time .chart {
+  margin-top: 2.4rem;
+  margin-bottom: 1.6rem;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+}
+
+#week-weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  width: 57.8rem;
+  height: 21.2rem;
+  padding: 4rem;
+  background-color: #6D67D0;
+  border-radius: 1rem;
+}
+
+#week-weather .day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+#week-weather .day span {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-transform: capitalize;
+  color: #DAD8F7;
+}
+
+#week-weather .day .white {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: white;
+}
+
+#week-weather .day .purple {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #C2BFF4;
+}
